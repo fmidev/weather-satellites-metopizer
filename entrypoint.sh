@@ -16,4 +16,5 @@ else
 fi
 
 tvcdu_to_ccsds --in /data/raw/${fname} --inst --out /data/ccsds/isps
-ccsds_to_l0 --in /data/ccsds/* --use-mmam /data/mmam --generate-mmam /data/mmam --outdir /data/l0 --config-mphr ${mphr_config}
+ccsds_to_l0 --in /data/ccsds/* --generate-mmam /data/mmam --config-mphr ${mphr_config}
+ccsds_to_l0 --in /data/ccsds/* --use-mmam /data/mmam  --outdir /data/l0 --config-mphr ${mphr_config}
